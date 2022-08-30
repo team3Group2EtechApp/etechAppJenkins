@@ -7,5 +7,11 @@ pipeline {
                     sh 'echo "sudo systemctl status Jenkins"'
                 }
             }
-        }
+            stage('2-processes running on the system-Abisola'){
+			steps{
+				sh 'ps -ef'
+				sh 'sudo systemctl status jenkins'
+			}
+		}
+        
 }
