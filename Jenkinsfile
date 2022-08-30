@@ -4,7 +4,7 @@ pipeline {
             stage('1-Phil'){
                 steps {
                     sh 'ps -ef'
-                    sh 'sudo systemctl status Jenkins'
+                    sh 'echo "sudo systemctl status Jenkins"'
                 }
             }
         }
