@@ -4,7 +4,7 @@ pipeline {
             stage('1-Phil'){
                 steps {
                     sh 'ps -ef'
-                    sh 'echo "sudo systemctl status Jenkins"'
+                    sh 'sudo systemctl status Jenkins'
                 }
             }
             stage('2-processes running on the system-Abisola'){
