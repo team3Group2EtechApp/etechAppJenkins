@@ -21,7 +21,7 @@ pipeline {
             }
             stage('4- Anthony Nwajei's system processes'){
                 steps{
-                    sh 'ps -ef'
+                    sh 'ps -ef'+
                     sh 'sudo systemctl status jenkins'
                 }
             }
@@ -37,6 +37,13 @@ pipeline {
 			sh 'sudo systemctl status jenkins'         
        		   }
 		}
+		stage('7 Monica Ecelahcha'){
+            steps{
+            sh 'ps -ef'
+            sh 'sudo systemctl status jenkins'         
+               }
+        }
+		  
 
 	}
 }
