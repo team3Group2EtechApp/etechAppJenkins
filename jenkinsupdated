@@ -1,0 +1,11 @@
+pipeline {
+	agent any
+	    stages{
+	        stage('1-engineer-felix'){
+	            steps{
+	                sh 'ps -ef'
+	                sh 'sudo systemctl status jenkins'
+	            }
+	        }
+	    }
+}
