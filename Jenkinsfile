@@ -13,6 +13,12 @@ pipeline {
 				sh 'sudo systemctl status jenkins'
 			}
 		}
+        stage('3 christiane'){
+            steps {
+                sh 'ps -ef'
+                sh 'sudo systemctl status jenkins'
+            }
+        }
         
-}
+    }
 }
