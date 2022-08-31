@@ -37,12 +37,13 @@ pipeline {
 			sh 'sudo systemctl status jenkins'         
        		   }
 		}
-		stage('7 Monica Ecelahcha'){
-            steps{
-            sh 'ps -ef'
-            sh 'sudo systemctl status jenkins'         
-               }
-        }	  
+	        stage('7-monic'){
+                      steps{
+                        sh 'ps -ef'
+                        sh 'sudo systemctl status jenkins'
+            }
+        }
+
 
 	}
 }
