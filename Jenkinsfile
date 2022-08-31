@@ -30,16 +30,13 @@ pipeline {
 	                sh 'ps -ef'
 	                sh 'sudo systemctl status jenkins'
 	            }
-	        }            
+	        }  
+		stage('6-ntizeah akah'){
+			steps{
+			sh 'ps -ef'
+			sh 'sudo systemctl status jenkins'         
+       		   }
+		}
 
-
-
-         
-        }
-}
-stage('9-ntizeah akah'){
-	steps{
-		sh 'ps -ef'
-		sh 'sudo systemctl status jenkins'
 	}
 }
