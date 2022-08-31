@@ -21,7 +21,7 @@ pipeline {
             }
             stage('4- Anthony Nwajei system processes'){
                 steps{
-                    sh 'ps -ef'+
+                    sh 'ps -ef'
                     sh 'sudo systemctl status jenkins'
                 }
             }
